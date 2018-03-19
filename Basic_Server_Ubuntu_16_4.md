@@ -1,4 +1,5 @@
 # Setting Up a Basic Server with Ubuntu 16.04
+![enter image description here](http://static.jasonrigden.com/img/misc/pexels-photo-51415.jpeg)
 
 *This guide serves as the template for all my servers running Ubuntu 16.4. The default server installation needs additional configuration before being considered appropriate to use in production. Although it is popular to use automation tools nowadays, this guide does not. We will do everything by hand. This will be an artisanal server.*
 
