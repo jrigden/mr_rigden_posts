@@ -134,5 +134,44 @@ Then enable the firewall.
 
 If you would like a more detailed guide to UFW check out my post, [A Guide to the Uncomplicated Firewall (UFW) for Linux](https://medium.com/@mr_rigden/a-guide-to-the-uncomplicated-firewall-ufw-for-linux-570c3774d7f4)
 
+## Name Your Server
+Generic server names can be confusing. In this guide we will name our server `seattle`. Let's change the hostname.
+
+`sudo nano /etc/hostname`
+
+Change it to `seattle`. Now edit the hosts files.
+ `sudo nano /etc/hosts`
+
+    127.0.0.1       localhost    
+    # The following lines are desirable for IPv6 capable hosts
+    ::1     ip6-localhost ip6-loopback
+    fe00::0 ip6-localnet
+    ff02::1 ip6-allnodes
+    ff02::2 ip6-allrouters
+
+And add you server name like so.
+
+    127.0.0.1       localhost
+    127.0.1.1       seattle
+    
+    # The following lines are desirable for IPv6 capable hosts
+    ::1     ip6-localhost ip6-loopback
+    fe00::0 ip6-localnet
+    ff02::1 ip6-allnodes
+    ff02::2 ip6-allrouters
+
+Now reboot.
+
+    sudo reboot
+
+## Time
+Set you sever on an appropriate timezone. For me that is Pacific time.
+
+    sudo timedatectl set-timezone America/Los_Angeles
+
+Then make sure the server is using the Network Time Protocol.
+
+    sudo timedatectl set-ntp on
+
 ## Conclusion
 If have followed this guide you will have a basic server that is just a bit more secure. 
