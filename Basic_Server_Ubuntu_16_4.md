@@ -134,4 +134,5 @@ Then enable the firewall.
 
 If you would like a more detailed guide to UFW check out my post, [A Guide to the Uncomplicated Firewall (UFW) for Linux](https://medium.com/@mr_rigden/a-guide-to-the-uncomplicated-firewall-ufw-for-linux-570c3774d7f4)
 
-
+## Conclusion
+If have followed this guide you will have a basic server that is just a bit more secure. 
